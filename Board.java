@@ -17,13 +17,13 @@ public class Board{
     // public void boardSize(int h, int v){
     //     chessBoard = new String[h][v];
     // }
-    // public void fillEmptyBoard(){
-    //     for (int x = 0; x < 8; x++) {
-    //         for (int y = 0; y < 8; y++) {
-    //             Board[x][y] = "-";
-    //         }
-    //     }
-    // }
+    public void fillEmptyBoard(){
+        for (int x = 0; x < 8; x++) {
+            for (int y = 0; y < 8; y++) {
+                Board[x][y] = "-";
+            }
+        }
+    }
     public void addPiece(int x, int y){
         hPos = x;
         vPos = y;
