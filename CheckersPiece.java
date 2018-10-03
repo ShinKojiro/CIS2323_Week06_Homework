@@ -3,10 +3,16 @@ public class CheckersPiece{
     // private int vPos;
     // private int hPos;
     // private String pieceType;
-    private int[][] checkersPiece = new int[][];
+    private int[] checkersPiece = new int[12];
 
-    public checkesPiece(){
-        checkersPiece checkers = new checkersPiece
+    public checkesPiece(Color c, int x, int y){
+        color = c;
+    }
+    public void setColor(String c){
+        Color = c;
+    }
+    public String getColor(){
+        Return Color;
     }
 
     // public int getPosition(){

@@ -25,10 +25,10 @@ public class Board{
         }
     }
     
-    public String getPiece(){
-        String boardPosition = (hPos + "" + vPos);
-        return boardPosition;
-    }
+    // public String getPiece(){
+    //     String boardPosition = (hPos + "" + vPos);
+    //     return boardPosition;
+    // }
     public void printBoard(int x, int y){
         System.out.print(" " + Board[x][y].toString());
     }
