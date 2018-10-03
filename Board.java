@@ -1,6 +1,7 @@
 public class Board{
     private int vPos;
     private int hPos;
+    private final int PIECES_PER_PLAYER = 12;
     //private String boardPosition;
     //private String pieceName;
     // private final int BOARD_SQUARES = 8;
@@ -23,41 +24,12 @@ public class Board{
             }
         }
     }
-    public void addPiece(int x, int y){
-        hPos = x;
-        vPos = y;
-        // switch(hPos){
-        //     case 1:
-        //     vPosChar = 'a';
-        //     break;
-        //     case 2:
-        //     vPosChar = 'b';
-        //     break;
-        //     case 3:
-        //     vPosChar = 'c';
-        //     break;
-        //     case 4:
-        //     vPosChar = 'd';
-        //     break;
-        //     case 5:
-        //     vPosChar = 'e';
-        //     break;
-        //     case 6:
-        //     vPosChar = 'f';
-        //     break;
-        //     case 7:
-        //     vPosChar = 'g';
-        //     break;
-        //     case 8:
-        //     vPosChar = 'h';
-        //     break;
-        // }
-    }
+    
     public String getPiece(){
         String boardPosition = (hPos + "" + vPos);
         return boardPosition;
     }
     public void printBoard(int x, int y){
-        System.out.print(" " + chessBoard[x][y]);
+        System.out.print(" " + Board[x][y].toString());
     }
 }
